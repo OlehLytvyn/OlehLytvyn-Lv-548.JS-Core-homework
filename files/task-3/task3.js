@@ -81,6 +81,36 @@ console.log(raiseToDegree(3, 4));
 
 // task 3
 
+function randNum(min, max) {
+  const step1 = max - min + 1;
+  const step2 = Math.random() * step1;
+  const result = Math.floor(step2) + min;
+
+  return result;
+}
+
+console.log(randNum(0, 500));
+
 // task 2
 
+for (let i = 0; i <= 15; i++) {
+  if (i === 0) {
+    console.log(i + ' is even');
+  }
+
+  if (i % 2 === 0) {
+    console.log(i + ' is even');
+  } else {
+    console.log(i + ' is odd');
+  }
+}
+
 // task 1
+
+const ourArr = [2, 3, 4, 5];
+let result = 0;
+for (let e = 0; e < ourArr.length - 1; e++) {
+  result += ourArr[e];
+}
+
+console.log(result);
