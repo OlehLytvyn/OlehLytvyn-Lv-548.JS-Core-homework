@@ -79,17 +79,22 @@ function raiseToDegree(a, b) {
 
 console.log(raiseToDegree(3, 4));
 
-// task 3
+// ///////////////////////// task 3 //////////////////////////////////////////////
+// Math.ceil(), Math.floor(), Math.random(), function as parameter
 
 function randNum(min, max) {
-  const step1 = max - min + 1;
-  const step2 = Math.random() * step1;
-  const result = Math.floor(step2) + min;
-
-  return result;
+  min = Math.ceil(min);
+  max = Math.ceil(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-console.log(randNum(0, 500));
+function randArr(x, min, max, foo) {
+  let arr = [];
+  for (let i = 0; i < x; i++) {
+    arr.push(foo(min, max));
+  }
+  console.log(arr);
+}
+randArr(9, 1, 500, randNum);
 
 // task 2
 
