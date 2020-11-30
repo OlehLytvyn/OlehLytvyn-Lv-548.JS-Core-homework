@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <h1 id="myHeader">I'am a big header!!!</h1>
+
+    <div id="myDiv">
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+      <p>Third paragraph</p>
+      <p>Fourth paragraph</p>
+    </div>
+    <ul id="myList">
+      <li>Make</li>
+      <li>me</li>
+      <li>horizontal!</li>
+    </ul>
+    <span>Make me invisible, please!</span>
+
+    <script>
+      let bigHeader = document.getElementById("myHeader");
+      bigHeader.style.backgroundColor = "lightgreen";
+      //
+      let allP = document.querySelectorAll("p");
+      allP[0].style.fontWeight = "bold";
+      allP[1].style.color = "red";
+      allP[2].style.textDecoration = "underline";
+      allP[3].style.fontStyle = "italic";
+      //
+      let oneLine = document.querySelectorAll("ul > li");
+      document.write(
+        "<br \/>" +
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+          oneLine[0].innerHTML +
+          oneLine[1].innerHTML +
+          oneLine[2].innerHTML
+      );
+      let list = document.querySelector("#myList");
+      list.remove();
+      //
+      let invisible = document.querySelector("span");
+      invisible.style.visibility = "hidden";
+    </script>
+  </body>
+</html>
