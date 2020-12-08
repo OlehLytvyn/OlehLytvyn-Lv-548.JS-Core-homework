@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="size"></div>
+    <script>
+      window.addEventListener('resize', function () {
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        document.getElementById('size').innerHTML = `Width: ${w}, Height: ${h}`;
+      });
+    </script>
+  </body>
+</html>

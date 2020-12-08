@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <form>
+      <select id="nameList">
+        <option>Peter</option>
+        <option>John</option>
+        <option>Alise</option>
+        <option>Alex</option>
+        <option>Iren</option>
+      </select>
+      <input type="button" onclick="deleteName()" value="Choose and Delete" />
+    </form>
+    <script>
+      function deleteName() {
+        let listName = document.getElementById('nameList');
+        listName.remove(listName.selectedIndex);
+      }
+    </script>
+  </body>
+</html>

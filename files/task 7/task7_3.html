@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <button onclick="getBlueColor()">Click to make the page blue.</button>
+    <button ondblclick="getPinkColor()">
+      Double-click to make the page pink.
+    </button>
+    <button onmousedown="mouseDown()" onmouseup="mouseUp()">
+      Click and hold to make the page brown.
+    </button>
+    <a href="" id="linkTag">Hover over to make page yellow.</a>
+    <script>
+      function getBlueColor() {
+        document.body.style.backgroundColor = 'blue';
+      }
+      function getPinkColor() {
+        document.body.style.backgroundColor = 'pink';
+      }
+      function mouseDown() {
+        document.body.style.backgroundColor = 'brown';
+      }
+      linkTag.onmouseover = linkTag.onmouseout = handler;
+      function handler(event) {
+        if (event.type === 'mouseover') {
+          document.body.style.backgroundColor = 'yellow';
+        }
+        if (event.type === 'mouseover') {
+          document.body.style.backgroundColor = 'yellow';
+        }
+      }
+    </script>
+  </body>
+</html>
